@@ -1,2 +1,9 @@
-# azureHandsOn
-Getting hands on experience with tools, resources, and cloud management in Azure while studying for relevant certifications. 
+<div align="center">
+<img width="1800" height="600" alt="image" src="https://github.com/user-attachments/assets/650839ef-240d-492a-8bbf-5637cc0d370a" />
+
+
+<h1>Hands-on with Azure</h1>
+
+Hello! <br> <br>
+This is the central repo for all things related to time getting more experience with Microsoft's Azure platform.
+</div>
