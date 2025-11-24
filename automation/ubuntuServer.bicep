@@ -1,4 +1,5 @@
 // Bicep module to deploy general Ubuntu Server 18.04 LTS VM with Public IP and NIC
+// AZ CLI Commands to get this code working are below
 
 // PARAMETERS 
 param vmName string = 'VM-${uniqueString(resourceGroup().id)}'
@@ -110,7 +111,11 @@ resource LinuxVirtualMachine 'Microsoft.Compute/virtualMachines@2023-09-01' = {
       ]
     }
   }
-}
 
 // OUTPUTS 
 output vmPublicIP string = publicIP.properties.ipAddress
+
+// **AZ CLI Commands** 
+
+az group create --name jbrg --location westus2
+az deployment group create  --resource-group jbrg  --template-file "${PathToFile}\UbuntuServerTemplate.bicep"  --parameters adminPassword='password123!'
